@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J-Alen</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?
+        family=Manrope:wght@400;700&family=Noto+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-[#111418] text-[#e0e0e0] font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-20 bg-[#111418]/90 backdrop-blur-sm border-b border-[#283039]
+             flex items-center justify-between px-8 py-4"
+    >
+      <a href="#hero" class="flex items-center gap-3">
+
+        <h1 class="text-xl font-bold text-white">
+          J-Alen
+        </h1>
+      </a>
+      <nav class="flex gap-6">
+        <a href="#about" class="hover:text-white transition">Sobre mi</a>
+        <a href="#projects" class="hover:text-white transition">Proyectos</a>
+        <a href="#contact" class="hover:text-white transition">Contacto</a>
+      </nav>
+
+    </header>
+
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="flex flex-col items-center text-center py-16 px-6"
+    >
+      <img
+        src="profile.jpeg"
+        alt="Foto de perfil"
+        class="w-40 h-40 rounded-full object-cover border-4 border-[#00539C]"
+      />
+      <h2 class="mt-6 text-3xl font-bold text-white">
+        Juan Alejandro Santiago Gallegos
+      </h2>
+      <p class="mt-2 text-[#9cabba]">
+        Estudiante de Ingeniería de Software • Universidad Veracruzana (2022-2026)
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-3xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-bold text-white mb-4">Sobre mí</h3>
+      <p class="leading-relaxed">
+        Apasionado por la optimización y la eficiencia, factores que me gusta aplicar en mis desarrollos.
+        Cuento con experiencia en proyectos académicos y personales que implementan tecnologías como: Kotlin, Vue.js, PostgreSQL y Unity con C#.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="bg-[#16181d] py-12"
+    >
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-bold text-white mb-6">Mis proyectos</h3>
+        <div class="grid gap-6 md:grid-cols-3">
+          <!-- Proyecto 1 -->
+          <div
+            class="group bg-[#1f242b] rounded-xl overflow-hidden shadow-md
+                   transform hover:scale-105 hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-[url('logoSanuvia.png')] bg-cover bg-center"></div>
+            <div class="p-5">
+              <h4 class="text-lg font-semibold text-white group-hover:text-[#00539C]">
+                Sanuvia (Kotlin)
+              </h4>
+              <p class="mt-2 text-sm text-[#9cabba]">
+                App móvil en Kotlin en integra inteligencia artificial para escanear alimentos.
+              </p>
+              <a
+                href="https://github.com/J-Alen26/Sanuvia.git"
+                class="inline-block mt-4 text-sm font-medium underline hover:text-[#00539C]"
+              >
+                Ir repositorio
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div
+            class="group bg-[#1f242b] rounded-xl overflow-hidden shadow-md
+                   transform hover:scale-105 hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-[url('vue.png')] bg-cover bg-center"></div>
+            <div class="p-5">
+              <h4 class="text-lg font-semibold text-white group-hover:text-[#00539C]">
+                CRUD en Vue & PostgreSQL
+              </h4>
+              <p class="mt-2 text-sm text-[#9cabba]">
+                Sistema de gestión de inventario con interfaz en Vue.js y base de datos PostgreSQL.
+              </p>
+              <a
+                href="https://github.com/alegria1026/app2.git"
+                class="inline-block mt-4 text-sm font-medium underline hover:text-[#00539C]"
+              >
+                Ir respositorio
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div
+            class="group bg-[#1f242b] rounded-xl overflow-hidden shadow-md
+                   transform hover:scale-105 hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-[url('exo.jpeg')] bg-cover bg-center"></div>
+            <div class="p-5">
+              <h4 class="text-lg font-semibold text-white group-hover:text-[#00539C]">
+                Juego en Unity
+              </h4>
+              <p class="mt-2 text-sm text-[#9cabba]">
+                Juego de ventura 3D con niveles interactivos, desarrollado en Unity con C#.
+              </p>
+              <a
+                href="https://1drv.ms/u/c/74e86fed5339c92e/ES7JOVPtb-gggHSSPQAAAAABs-ucTU1TiRfNJLAY8ho_-w?e=BRziAQ"
+                class="inline-block mt-4 text-sm font-medium underline hover:text-[#00539C]"
+              >
+                Descargar APK
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center text-sm text-[#9cabba] py-6">
+      Juan Alejandro Santiago | J-Alen
+    </footer>
+  </body>
+</html>
